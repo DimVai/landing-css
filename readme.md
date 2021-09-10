@@ -13,6 +13,8 @@ This is to be used when writing a **new** landing page using plain HTML.
 
 ## Live example here: 
 
+https://dimvai.github.io/landing-css/
+
 <hr>
 
 ## Load style as the first style in your HTML <head>
