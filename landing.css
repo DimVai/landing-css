@@ -6,6 +6,7 @@
 	--lg: 992px;
 	--pageMaxWidth: 1200px;
   --mainFont: Verdana, Geneva, sans-serif; 
+  /* --mainFont:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; */
   --inputFont: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --defaultFontSize: 1.2rem;
   --defaultMargin: 1rem;
@@ -294,9 +295,8 @@ header * {
 
 /***************     Layout classes     ********/
 .center-content{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+  place-items: center;
 }
 .columns{
 	column-count: 2;	 /* max columns */

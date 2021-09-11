@@ -16,8 +16,12 @@ This is to be used when writing a **new** landing page using plain HTML.
 https://dimvai.github.io/landing-css/
 
 <hr>
+<hr>
 
-## Load style as the first style in your HTML <head>
+# **How to use:**
+
+Load style as the first (or only) stylesheet in your HTML `<head>`:
+
  ```html
  <link rel="stylesheet" href="landing.min.css">
  ```
@@ -25,50 +29,60 @@ https://dimvai.github.io/landing-css/
 <hr>
 
 ## **This CSS formats all the basic HTML Elements**
+
+Look at the live example (link above) for how they look.
+
 ```css
 p
 
 h1,h2,h3,h4
 
-img, figure
 
 a (links)
 
+button (buttons are customizable with classes - read below)
+
+img, figure
+
+
 ol, ul, dd, li (lists)
+
+table, td, th, tr (tables)
+
+
+hr
+
+
+fieldset, legend, label (forms)
+
+input textarea select (forms)
+
 
 code, kbd, pre, samp, code,
 
 sub, sup
 
-blockquote (formatted also as to be used for an important paragraph)
-
-hr
-
-table, td, th, tr (tables)
-
-button
-
-fieldset, legend, label (forms)
-
-input text area select (forms)
+blockquote (formatted also as to be used for a "standing-out" paragraph)
 
 aside
+
 ```
 
 <hr>
 
 ##  Header with navigation bar
 
-The `landing-css` formats nicely your header if you use the following standard format (use `header` as the first element of body to hav the navigation bar stick on top of page):
+The `landing-css` formats nicely your header if you use the following standard format (use `header` as the first element of body to have the navigation bar *stick* on top of page):
 ```html
 <body>
+
     <!-- header should be the first element inside body -->
     <header>
-        <!-- the first element (div) contains what goes on the left --> 
+        <!-- header's first element (div) contains what goes on the left --> 
         <div>   
             <a href="#"><h2>Logo and/or Brand</h2></a>
         </div> 
-        <!-- the second element (nav) contains what goes on the right -->
+        <!-- header's second element (nav) contains what goes on the right -->
         </nav>  
             <ul>   
                 <li><a href="pricing.html">Pricing</a></li>
@@ -77,13 +91,15 @@ The `landing-css` formats nicely your header if you use the following standard f
             </ul>
         </nav>
     </header>
+
     <main>
         <!-- main body content -->
     </main>
+
 </body>
 ```
 
-#  Classes to add additional style
+#  **Classes to add additional style and layout**
 
 ##  Classes for colors
 
@@ -125,25 +141,19 @@ Ways to format an `a` link as a button:
 <a href="#" class="button">Click me</a>
 <a href="#" type="button">A "link" button</a>
 ```
-Tou can use `small` if you want a smaller button (only in `button` or `button`-style element)
+Tou can use `small` if you want a smaller button (only in `button` or `button`-ish element)
 ```HTML
 <button class="small">A smaller button</button>
 ```
 
-##  Classes for layout
-With their usual meaning:
-```css
-.bold .italics .underlined 
-```
-
 ##  Centering things
-These classes (small, medium, large) are used to limit the width of an html element (e.g. a `div`, or an `img`) and also center it:
+These classes (small, medium, large) are used to limit the width of an html element (e.g. a `div`, or an `img`) and maybe center it (in some cases):
 ```css
 .sm 
 .md 
 .lg 
 ```
-Use `center` to center a text element (p,h1-h4):
+Use `center` to center a text element (p, h1-h4):
 ```css
 .center
 ```
