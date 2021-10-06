@@ -44,11 +44,12 @@ button (buttons are customizable with classes - read below)
 
 img, figure
 
+nav (the color is customizable with classes)
+
 
 ol, ul, dd, li (lists)
 
 table, td, th, tr (tables)
-
 
 hr
 
@@ -78,12 +79,14 @@ The `landing-css` formats nicely your header if you use the following standard f
 
     <!-- header should be the first element inside body -->
     <header>
-        <!-- header's first element (div) contains what goes on the left --> 
-        <div>   
-            <a href="#"><h2>Logo and/or Brand</h2></a>
+        
+        <div>  <!-- header's first element (div) goes on the left --> 
+            <a href="#">
+                <img src="optional.png" height="30px"/>
+                <h2>Logo and/or Brand</h2>
+            </a>
         </div> 
-        <!-- header's second element (nav) contains what goes on the right -->
-        </nav>  
+        </nav>  <!-- header's second element (nav) goes on the right -->
             <ul>   
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -107,6 +110,12 @@ If you want a red part of a sentence, you can use `class="red"` in a span:
 ```html
 <h2>This is an heading <span class="red">that is important</span></h2>
 ```
+
+Similarly, this is a green button: 
+```html
+<button class="green">Go inside</button>
+```
+
 You can use the following classes for coloring **text** (p, h1-h4, span) elements:
 ```css
 .red 
@@ -129,11 +138,13 @@ and these classes for coloring **buttons**, header, th, nav:
 ##  Classes for formatting text
 Basic formatting classes (with usual meaning):
 ```css
-.bold .italics .underlined 
+.bold 
+.italics 
+.underlined 
 ```
 If you want a paragraph to have columns in large screens, use `columns` class:
 ```html
-    <p class="columns">Text in columns...</p>
+<p class="columns">Text in columns...</p>
 ```
 
 Ways to format an `a` link as a button:
@@ -165,8 +176,9 @@ in the **parent** element. For example, to center a table, wrap in in a div with
 ```HTML
 <div class="center-content">
     <table>
-        <!-- tr td and other table elements -->
+        <!-- tr,td and other table elements -->
     </table>
 </div>
 ```
 
+## Have fun!
