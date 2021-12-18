@@ -6,7 +6,7 @@
 
 
 This is to be used when writing a **new** landing page using plain HTML.
- This is "invasive" and formats the basic HTML Elements (headings, links, buttons, inputs etc) so don't use it if your HTML has style already. This is a basic style to start writing your HTML page. 
+ This is "invasive" and formats the basic HTML Elements (headings, links, buttons, inputs etc) so don't use it if your HTML has already been styled. This is a basic style to start writing your HTML page. 
 
 <hr>
 
@@ -67,26 +67,27 @@ blockquote (formatted also as to be used for a "standing-out" paragraph)
 
 aside
 
+
+header, footer
+
 ```
 
 <hr>
 
 ##  Header with navigation bar
 
-The `landing-css` formats nicely your header if you use the following standard format (use `header` as the first element of body to have the navigation bar *stick* on top of page):
+The `landing-css` formats nicely your header if you use the following recommended format for: body,header,main. Use `header` as the first element of body (to have the navigation bar *stick* on top of page) like this:
 ```html
 <body>
 
-    <!-- header should be the first element inside body -->
-    <header>
-        
-        <div>  <!-- header's first element (div) goes on the left --> 
-            <a href="#">
-                <img src="optional.png" height="30px"/>
-                <h2>Logo and/or Brand</h2>
-            </a>
-        </div> 
-        </nav>  <!-- header's second element (nav) goes on the right -->
+    <header> 
+        <!-- header's first element (logo) goes on the left --> 
+        <a class="logo" href="/">  
+            <img src="optional.png" height="35px"/>
+            <span>Logo and/or Brand</span>
+        </a>
+        <!-- header's second element (nav) goes on the right -->
+        </nav>  
             <ul>   
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -101,6 +102,7 @@ The `landing-css` formats nicely your header if you use the following standard f
 
 </body>
 ```
+Notes. Use `class="logo"` or `class="brand"` on an `a`, `h1`, `div` or any other HTML tag, in order to give it a responsive font size. 
 
 #  **Classes to add additional style and layout**
 
@@ -133,6 +135,26 @@ and these classes for coloring **buttons**, header, th, nav:
 .orange
 .purple
 .grey
+.indigo
+.teal
+.cyan
+.pink
+.navy
+.brown
+.maroon
+.violet
+```
+
+General background color classes:
+```css
+.silver
+.lavender
+.sand
+.snow
+.pale-blue
+.pale-red
+.pale-yellow
+.pale-green
 ```
 
 ##  Classes for formatting text
@@ -164,6 +186,8 @@ These classes (small, medium, large) are used to limit the width of an html elem
 .md 
 .lg 
 ```
+**Warning**: do not use the above classes on head, body, main etc. Instead, create a new div inside those with the class. 
+
 Use `center` to center a text element (p, h1-h4):
 ```css
 .center
@@ -180,5 +204,7 @@ in the **parent** element. For example, to center a table, wrap in in a div with
     </table>
 </div>
 ```
+<hr>
 
-## Have fun!
+## **Have fun!**
+<hr>
