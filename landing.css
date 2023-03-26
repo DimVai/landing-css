@@ -112,8 +112,7 @@ sub {
   ========================================================================== */
 img, center, .center, figure {
     display: block;
-    margin-left: auto;		
-    margin-right: auto;		
+    margin-inline: auto;		
     text-align: center;	/*text inside figure*/
     max-width: 100vw; /*for img*/
 }
@@ -319,7 +318,7 @@ input:focus:not([type=submit],[type=reset]), textarea:focus, select:focus{
 .snow{background:snow}
 .pale-blue{background:#ddffff}
 .pale-red{background:#ffdddd}
-.pale-yellow{background:hs#ffffcc}
+.pale-yellow{background:#ffffcc}
 .pale-green{background:#ddffdd}
 
 /*Slim containers*/
